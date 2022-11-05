@@ -1,0 +1,62 @@
+button {
+  background-color: #0400ff; /* Green */
+  border: none;
+  color: #ffffff;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 20px 1px;
+  transition-duration: 1s;
+  cursor: crosshair;
+}
+
+button:hover {
+  background-color: #ff0000;
+  color: #000000;
+}
+
+body {
+  background-color: white;
+}
+
+header {
+  background-color: white;
+}
+
+input {
+  background-color: white;
+  font-size: larger;
+}
+
+.lengthClass {
+  background-color: rgb(228, 110, 110);
+  width: 60px;
+  height: 20px;
+  display: block;
+}
+
+.capClass {
+  background-color: rgb(253, 209, 65);
+  width: 60px;
+  height: 20px;
+  display: block;
+}
+
+.specialClass {
+  background-color: rgb(138, 241, 112);
+  width: 60px;
+  height: 20px;
+  display: block;
+}
+
+.numberClass {
+  background-color: rgb(184, 90, 221);
+  width: 60px;
+  height: 20px;
+  display: block;
+}
+
+.passBox {
+}

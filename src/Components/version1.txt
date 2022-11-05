@@ -1,0 +1,148 @@
+import React from "react";
+import "./passgen.css";
+
+const PassGen = () => {
+  const charLength = prompt("Please Select Character Length");
+
+  if (charLength != "null") {
+    const passCase = prompt(
+      "Would you like it to be case sensitive? Yes or No"
+    );
+  }
+
+  if (passCase == "Yes" or "yes" or "No" or "no") {
+    const passSpecial = prompt("Do you want special characters in your password?")
+  }
+
+  if (passSpecial == "Yes")
+
+  return <div></div>;
+};
+
+// if (
+    //   (capital == "Yes" && special == "Yes" && numbers == "Yes") ||
+    //   (capital == "yes" && special == "yes" && numbers == "yes")
+    // ) {
+    //   caseBi = true;
+    //   specialBi = true;
+    //   numberBi = true;
+    // } else if (
+    //   (capital == "No" && special == "No" && numbers == "No") ||
+    //   (capital == "no" && special == "no" && numbers == "no")
+    // ) {
+    //   caseBi = false;
+    //   specialBi = false;
+    //   numberBi = false;
+    // } else if (
+    //   (capital == "Yes" && special == "Yes" && numbers == "No") ||
+    //   (capital == "yes" && special == "yes" && numbers == "no")
+    // ) {
+    //   caseBi = true;
+    //   specialBi = true;
+    //   numberBi = false;
+    // } else if (
+    //   (capital == "Yes" && special == "No" && numbers == "No") ||
+    //   (capital == "yes" && special == "no" && numbers == "no")
+    // ) {
+    //   caseBi = true;
+    //   specialBi = false;
+    //   numberBi = false;
+    // } else if (
+    //   (capital == "No" && special == "Yes" && numbers == "Yes") ||
+    //   (capital == "no" && special == "yes" && numbers == "yes")
+    // ) {
+    //   caseBi = false;
+    //   specialBi = true;
+    //   numberBi = true;
+    // } else if (
+    //   (capital == "No" && special == "No" && numbers == "Yes") ||
+    //   (capital == "no" && special == "no" && numbers == "yes")
+    // ) {
+    //   caseBi = false;
+    //   specialBi = false;
+    //   numberBi = true;
+    // } else if (
+    //   (capital == "No" && special == "Yes" && numbers == "No") ||
+    //   (capital == "no" && special == "yes" && numbers == "no")
+    // ) {
+    //   caseBi = false;
+    //   specialBi = true;
+    //   numberBi = false;
+    // } else if (
+    //   (capital == "Yes" && special == "No" && numbers == "Yes") ||
+    //   (capital == "yes" && special == "no" && numbers == "yes")
+    // ) {
+    //   caseBi = true;
+    //   specialBi = false;
+    //   numberBi = true;
+    // }
+    
+export default PassGen;
+
+
+return (
+    <div>
+      <form>
+        <label>
+          Password Length
+          <input
+            className="lengthClass"
+            type="number"
+            value={length}
+            onChange={(e) => setLength(e.target.value)}
+          />
+        </label>
+      </form>
+      <form>
+        <label>
+          Caps included?
+          <input
+            className="capClass"
+            type="checkbox"
+            value={capital}
+            onChange={(e) => setCapital(e.target.value.toLowerCase())}
+          />
+        </label>
+      </form>
+      <form>
+        <label>
+          Special characters?
+          <input
+            className="specialClass"
+            type="checkbox"
+            value={special}
+            onChange={(e) => setSpecial(e.target.value.toLowerCase())}
+          />
+        </label>
+      </form>
+      <form>
+        <label>
+          Do you want numbers?
+          <input
+            className="numberClass"
+            type="checkbox"
+            value={numbers}
+            onChange={(e) => setNumbers(e.target.value.toLowerCase())}
+          />
+        </label>
+      </form>
+      <button
+        type="button"
+        onClick={function () {
+          userInput();
+          passLogic();
+          randomPassFun();
+          console.log(allYes);
+        }}
+      >
+        Generate Password
+      </button>
+      <p className="passBox">Password: {generatedPass}</p>
+    </div>
+
+
+Random Block of Code
+1. //rpsList[Math.floor(rpsList.length * Math.random())]
+
+//NOTE
+1. using a quiz format to ask the password questions
